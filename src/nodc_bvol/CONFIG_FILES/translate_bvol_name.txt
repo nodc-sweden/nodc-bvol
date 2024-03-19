@@ -1,0 +1,60 @@
+scientific_name_from	scientific_name_to	note
+Actinocyclus octonarius v. octonarius	Actinocyclus octonarius var. octonarius	felstav
+Actinocyclus octonarius v. tenellus	Actinocyclus octonarius var. tenellus	felstav
+Amphiprora paludosa v. paludosa	Amphiprora paludosa var. paludosa	felstav
+Aphanizomenon flos-aquae	Aphanizomenon flosaquae	felstav
+Aphanothece parallelliformis	Aphanothece paralleliformis	felstav
+Aulacoseira granulata v. angustissima	Aulacoseira granulata var. angustissima	felstav
+Aulacoseira granulata v. granulata	Aulacoseira granulata var. granulata	felstav
+Aulacoseira islandica ssp. helvetica	Aulacoseira islandica subsp. helvetica	felstav
+Aulacoseira islandica ssp. islandica	Aulacoseira islandica subsp. islandica	felstav
+Chaetoceros anastomosans v. externa	Chaetoceros anastomosans var. externa	felstav
+Chaetoceros ceratosporus v. ceratosporus	Chaetoceros ceratosporus var. ceratosporus	felstav
+Chaetoceros didymus v. anglica	Chaetoceros didymus var. anglica	felstav
+Chaetoceros didymus v. didymus	Chaetoceros didymus var. didymus	felstav
+Chaetoceros didymus v. protuberans	Chaetoceros didymus var. protuberans	felstav
+Chaetoceros subtilis v. subtilis	Chaetoceros subtilis var. subtilis	felstav
+Chaetoceros throndsenii v. throndseinii	Chaetoceros throndsenii var. throndsenii	felstav
+Chaetoceros throndsenii v. throndsenii	Chaetoceros throndsenii var. throndsenii	felstav
+Choanoflagellida	Choanoflagellatea	felstav
+Choanoflagellidea	Choanoflagellatea	felstav
+Closterium acutum v. acutum	Closterium acutum var. acutum	felstav
+Closterium acutum v. variabile	Closterium acutum var. variabile	felstav
+Cocconeis placentula v. placentula	Cocconeis placentula var. placentula	felstav
+Cocconeis scutellum v. scutellum	Cocconeis scutellum var. scutellum	felstav
+cyanophyceae	Cyanophyceae	felstav
+Cyclotella,	Cyclotella	felstav
+Desmodesmus armatus v. armatus	Desmodesmus armatus var. armatus	felstav
+Desmodesmus opoliensis v. opoliensis	Desmodesmus opoliensis var. opoliensis	felstav
+Diatoma vulgaris v. vulgaris	Diatoma vulgaris var. vulgaris	felstav
+Dolichospermum flos-aquae	Dolichospermum flosaquae	felstav
+Flagellate	Flagellates	felstav
+Gomphonema olivaceum v. olivaceum	Gomphonema olivaceum var. olivaceum	felstav
+Gymnodinium galeatum	Gymnodinium galatheanum	felstav
+Heterocapsa arctica ssp. frigida	Heterocapsa arctica subsp. frigida	felstav
+Lagerheimia longiseta v. longiseta	Lagerheimia longiseta var. longiseta	felstav
+Legaardiella	Leegaardiella	felstav
+mesodinium	Mesodinium	felstav
+Navicula transitans v. derasa	Navicula transitans var. derasa	felstav
+Navicula transitans v. derasa f. delicatula	Navicula transitans var. derasa f. delicatula	felstav
+Navicula transitans v. transitans	Navicula transitans var. transitans	felstav
+Navicula transitans var transitans	Navicula transitans var. transitans	felstav
+Nitzschia acicularis v. acicularis	Nitzschia acicularis var. acicularis	felstav
+Pediastrum boryanum v. boryanum	Pediastrum boryanum var. boryanum	felstav
+Pediastrum duplex v. duplex	Pediastrum duplex var. duplex	felstav
+Polykrikos schwarzii	Polykrikos schwartzii	felstav
+Protoperidinium marielebourae	Protoperidinium marielebouriae	felstav
+Pseudopedinella pyriforme	Pseudopedinella pyriformis	felstav
+Pyramimona	Pyramimonas	felstav
+Rhizsolenia setigera	Rhizosolenia setigera	felstav
+Rhodomonas lacustris v. lacustris	Rhodomonas lacustris var. lacustris	felstav
+Rhodomonas lacustris v. nannoplanctica	Rhodomonas lacustris var. nannoplanctica	felstav
+Scenedesmus arcuatus v. arcuatus	Scenedesmus arcuatus var. arcuatus	felstav
+Synedra acus v. acus	Synedra acus var. acus	felstav
+Synedra ulna v. ulna	Synedra ulna var. ulna	felstav
+Tabellaria flocculosa v. asterionelloides	Tabellaria flocculosa var. asterionelloides	felstav
+Tetra?dron caudatum	Tetraedron caudatum	felstav
+Tetra?dron triangulare	Tetraedron triangulare	felstav
+Ulnaria delicatissima var. Angustissima	Ulnaria delicatissima var. angustissima	felstav
+Unicells	Unicell	felstav
+Unicells_and_flagellates	Unicells and flagellates	felstav
