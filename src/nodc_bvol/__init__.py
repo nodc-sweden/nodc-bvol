@@ -12,10 +12,7 @@ if getattr(sys, 'frozen', False):
 else:
     THIS_DIR = pathlib.Path(__file__).parent
 
-CONFIG_DIR = THIS_DIR.parent / 'CONFIG_FILES'
-
-if not CONFIG_DIR.exists():
-    CONFIG_DIR = THIS_DIR / 'CONFIG_FILES'
+CONFIG_DIR = THIS_DIR / 'CONFIG_FILES'
 
 
 @functools.cache
