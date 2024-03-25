@@ -5,7 +5,10 @@ description = "Handling translations with nomp list etc."
 authors = [
     {name = "Magnus Wenzer", email = "magnus.wenzer@smhi.se"},
 ]
-dependencies = []
+dependencies = [
+    "requests>=2.31.0",
+    "polars>=0.20.16",
+]
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
