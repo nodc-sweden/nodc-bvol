@@ -21,11 +21,30 @@ class TranslateBvolNameSize:
     def _cleanup_data(self) -> None:
         self._df = self._df.filter(~pl.col('scientific_name_from').str.starts_with('#'))
 
-    def get(self, name: str, size: str | int) -> Tuple[str, str] | bool:
+    def _get_return_data(self, data: dict) -> dict:
+        return dict(
+            name=data.get('scientific_name_to', ''),
+            size_class=data.get('size_class_to', ''),
+        )
+
+    def _get_translated_name_only(self, name: str) -> dict:
+        try:
+            data = self._df.filter(pl.col('scientific_name_from') == name).to_dicts()
+            if not data:
+                return dict()
+            d = data[0]
+            d.pop('size_class_to')
+            return self._get_return_data(d)
+        except pl.exceptions.NoRowsReturnedError:
+            return dict()
+
+    def get(self, name: str, size: str | int = None) -> dict:
         """Returns the translated bvol name and size of the given name and size"""
+        if not size:
+            return self._get_translated_name_only(name)
         size = int(size)
         try:
             data = self._df.row(by_predicate=((pl.col('scientific_name_from') == name) & (pl.col('size_class_from') == size)), named=True)
-            return data['scientific_name_to'], data['size_class_to']
+            return self._get_return_data(data)
         except pl.exceptions.NoRowsReturnedError:
-            return False
+            return self._get_translated_name_only(name)

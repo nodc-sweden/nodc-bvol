@@ -34,7 +34,7 @@ def get_translate_bvol_name_size_object() -> "TranslateBvolNameSize":
 
 
 @functools.cache
-def get_translate_bvol_nomp_object() -> "BvolNomp":
+def get_bvol_nomp_object() -> "BvolNomp":
     path = CONFIG_DIR / "bvol_nomp.txt"
     return BvolNomp(path)
 
