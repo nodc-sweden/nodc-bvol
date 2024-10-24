@@ -444,15 +444,15 @@ Synedra ulna var. ulna	4	Synedra ulna	4		2022
 Tabellaria flocculosa var. asterionelloides	1	Tabellaria flocculosa var. asterionelloides	2		2022	
 Tabularia tabulata	1	Tabularia fasciculata	5		2022	
 Tabularia tabulata	2	Tabularia fasciculata	6		2022	
-Tetraëdron caudatum	1	Tetraedron caudatum	1		2022	
-Tetraëdron caudatum	2	Tetraedron caudatum	2		2022	
-Tetraëdron caudatum	3	Tetraedron caudatum	3		2022	
-Tetraëdron caudatum	4	Tetraedron caudatum	4		2022	
-Tetraëdron minimum	1	Tetraedron minimum	1		2022	
-Tetraëdron minimum	2	Tetraedron minimum	2		2022	
-Tetraëdron minimum	3	Tetraedron minimum	3		2022	
-Tetraëdron minimum	4	Tetraedron minimum	4		2022	
-Tetraëdron triangulare	1	Tetraedron triangulare	1		2022	
+Tetraï¿½dron caudatum	1	Tetraedron caudatum	1		2022	
+Tetraï¿½dron caudatum	2	Tetraedron caudatum	2		2022	
+Tetraï¿½dron caudatum	3	Tetraedron caudatum	3		2022	
+Tetraï¿½dron caudatum	4	Tetraedron caudatum	4		2022	
+Tetraï¿½dron minimum	1	Tetraedron minimum	1		2022	
+Tetraï¿½dron minimum	2	Tetraedron minimum	2		2022	
+Tetraï¿½dron minimum	3	Tetraedron minimum	3		2022	
+Tetraï¿½dron minimum	4	Tetraedron minimum	4		2022	
+Tetraï¿½dron triangulare	1	Tetraedron triangulare	1		2022	
 Tetrastrum staurogeniaeforme	1	Tetrastrum staurogeniiforme	1		2022	
 Tetrastrum staurogeniaeforme	2	Tetrastrum staurogeniiforme	2		2022	
 Thalassionema frauenfeldii	1	Thalassionema frauenfeldii	8		2022	
