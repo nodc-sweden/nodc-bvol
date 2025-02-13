@@ -1,6 +1,5 @@
 import logging
 import pathlib
-from typing import Tuple
 
 import polars as pl
 
@@ -17,7 +16,7 @@ class BvolNomp:
         self._cleanup_data()
 
     def _load_file(self) -> None:
-        self._df = pl.read_csv(self._path, separator='\t', encoding='utf8', infer_schema_length=0)
+        self._df = pl.read_csv(self._path, separator='\t', encoding='cp1252', infer_schema_length=0)
 
     def _cleanup_data(self) -> None:
         self._df = self._df.filter(~pl.col(self.first_col).str.starts_with('#'))
