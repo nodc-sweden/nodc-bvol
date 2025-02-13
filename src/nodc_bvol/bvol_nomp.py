@@ -1,6 +1,5 @@
 import logging
 import pathlib
-from typing import Tuple
 
 import polars as pl
 
