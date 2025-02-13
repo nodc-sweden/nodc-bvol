@@ -19,7 +19,7 @@ CONFIG_FILE_NAMES = [
 
 
 CONFIG_DIRECTORY = None
-if os.getenv(CONFIG_ENV):
+if os.getenv(CONFIG_ENV) and pathlib.Path(os.getenv(CONFIG_ENV)).exists():
     CONFIG_DIRECTORY = pathlib.Path(os.getenv(CONFIG_ENV))
 
 
