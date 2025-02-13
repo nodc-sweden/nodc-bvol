@@ -20,7 +20,7 @@ CONFIG_FILE_NAMES = [
 
 CONFIG_DIRECTORY = None
 if os.getenv(CONFIG_ENV):
-    CONFIG_DIRECTORY = pathlib.Path(os.getenv('NODC_CONFIG'))
+    CONFIG_DIRECTORY = pathlib.Path(os.getenv(CONFIG_ENV))
 
 
 def get_config_path(name: str) -> pathlib.Path:
