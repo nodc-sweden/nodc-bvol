@@ -1,15 +1,11 @@
 import functools
+import logging
 import os
 import pathlib
-import ssl
 
-import requests
-import logging
-
+from nodc_bvol.bvol_nomp import BvolNomp
 from nodc_bvol.translate_bvol_name import TranslateBvolName
 from nodc_bvol.translate_bvol_name_size import TranslateBvolNameSize
-from nodc_bvol.bvol_nomp import BvolNomp
-
 
 logger = logging.getLogger(__name__)
 
