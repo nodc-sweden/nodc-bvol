@@ -68,7 +68,7 @@ class TranslateBvolNameSize:
         except pl.exceptions.NoRowsReturnedError:
             return dict()
 
-    def get(self, name: str, size: str | int = None) -> dict:
+    def get(self, name: str, size: str | int | None = None) -> dict:
         """Returns the translated bvol name and size of the given name and size"""
         if not size:
             return self._get_translated_name_only(name)
