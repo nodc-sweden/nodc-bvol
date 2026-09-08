@@ -86,9 +86,12 @@ class BvolNomp:
     def get_carbon_per_volume_mapper(self):
         mapping = {}
         for (aphia_id, size_class), df in self._df.group_by(["AphiaID", "SizeClassNo"]):
-            value = (
-                df["Calculated_Carbon_pg/counting_unit"][0].replace(",", ".").strip()
-            )
+            value = df["Calculated_Carbon_pg/counting_unit"][0]
+            # value = value.replace(",", ".").strip()
+            if value is None:
+                value = np.nan
+            else:
+                value = value.replace(",", ".").strip()
             if value:
                 value = float(value) / 1_000_000
             else:
