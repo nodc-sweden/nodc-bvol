@@ -1,10 +1,7 @@
 import functools
-import logging
 import pathlib
 
 import polars as pl
-
-logger = logging.getLogger(__name__)
 
 
 def _rekey_dict_loop_safe(d):

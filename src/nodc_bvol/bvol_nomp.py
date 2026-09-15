@@ -1,11 +1,8 @@
 import functools
-import logging
 import pathlib
 
 import numpy as np
 import polars as pl
-
-logger = logging.getLogger(__name__)
 
 
 class BvolNomp:
@@ -13,7 +10,7 @@ class BvolNomp:
 
     def __init__(self, path: str | pathlib.Path):
         self._path = pathlib.Path(path)
-        self._df: pl.DataFrame = None
+        self._df: pl.DataFrame = pl.DataFrame()
         self._load_file()
         self._cleanup_data()
         self._add_joined_column()

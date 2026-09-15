@@ -1,9 +1,6 @@
-import logging
 import pathlib
 
 import polars as pl
-
-logger = logging.getLogger(__name__)
 
 
 class TranslateBvolName:
@@ -28,7 +25,9 @@ class TranslateBvolName:
         self._df = self._df.filter(~pl.col("scientific_name_from").str.starts_with("#"))
 
     def get_scientific_name_from_to_mapper(self):
-        return dict(zip(self._df["scientific_name_from"], self._df["scientific_name_to"]))
+        return dict(
+            zip(self._df["scientific_name_from"], self._df["scientific_name_to"])
+        )
 
     def get(self, name: str) -> str | bool:
         """Returns the translated bvol name of the given name"""
