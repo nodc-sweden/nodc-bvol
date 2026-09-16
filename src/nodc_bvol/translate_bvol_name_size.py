@@ -1,10 +1,30 @@
 import functools
-import logging
 import pathlib
 
 import polars as pl
 
-logger = logging.getLogger(__name__)
+
+def _rekey_dict_loop_safe(d):
+    # chatGPT
+    result = {}
+
+    for start_key in d:
+        current = d[start_key]
+        visited = set()
+
+        while current in d:
+            if current in visited:
+                raise ValueError(f"Loop detected starting from {start_key}")
+            visited.add(current)
+            current = d[current]
+
+        result[start_key] = current
+
+    return result
+
+
+def _remove_key_equal_value(df: dict):
+    return dict((key, value) for key, value in df.items() if key != value)
 
 
 class TranslateBvolNameSize:
@@ -45,7 +65,7 @@ class TranslateBvolNameSize:
         except pl.exceptions.NoRowsReturnedError:
             return dict()
 
-    def get(self, name: str, size: str | int = None) -> dict:
+    def get(self, name: str, size: str | int | None = None) -> dict:
         """Returns the translated bvol name and size of the given name and size"""
         if not size:
             return self._get_translated_name_only(name)
@@ -88,4 +108,6 @@ class TranslateBvolNameSize:
                 )
             )
         )
+        data = _remove_key_equal_value(data)
+        data = _rekey_dict_loop_safe(data)
         return data

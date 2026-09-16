@@ -1,11 +1,8 @@
 import functools
-import logging
 import pathlib
 
 import numpy as np
 import polars as pl
-
-logger = logging.getLogger(__name__)
 
 
 class BvolNomp:
@@ -13,7 +10,7 @@ class BvolNomp:
 
     def __init__(self, path: str | pathlib.Path):
         self._path = pathlib.Path(path)
-        self._df: pl.DataFrame = None
+        self._df: pl.DataFrame = pl.DataFrame()
         self._load_file()
         self._cleanup_data()
         self._add_joined_column()
@@ -86,9 +83,12 @@ class BvolNomp:
     def get_carbon_per_volume_mapper(self):
         mapping = {}
         for (aphia_id, size_class), df in self._df.group_by(["AphiaID", "SizeClassNo"]):
-            value = (
-                df["Calculated_Carbon_pg/counting_unit"][0].replace(",", ".").strip()
-            )
+            value = df["Calculated_Carbon_pg/counting_unit"][0]
+            # value = value.replace(",", ".").strip()
+            if value is None:
+                value = np.nan
+            else:
+                value = value.replace(",", ".").strip()
             if value:
                 value = float(value) / 1_000_000
             else:

@@ -1,14 +1,15 @@
 [project]
 name = "nodc_bvol"
-version = "0.1.0"
+version = "0.2.0"
 description = "Handling translations with nomp list etc."
 authors = [
     {name = "Magnus Wenzer", email = "magnus.wenzer@smhi.se"},
 ]
 dependencies = [
     "requests>=2.31.0",
-    "polars>=1.26.0",
+    "polars>=1.31.0",
     "numpy>=2.2.5",
+    "nodc-config",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
@@ -19,6 +20,9 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 mypkg = ["."]
+
+[tool.uv.sources]
+nodc-config = { git = "https://github.com/nodc-sweden/nodc-config.git", rev = "v0.1.0" }
 
 [dependency-groups]
 dev = [

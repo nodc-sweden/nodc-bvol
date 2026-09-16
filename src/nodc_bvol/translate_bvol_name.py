@@ -1,9 +1,6 @@
-import logging
 import pathlib
 
 import polars as pl
-
-logger = logging.getLogger(__name__)
 
 
 class TranslateBvolName:
